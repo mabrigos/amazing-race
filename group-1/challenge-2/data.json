@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "Alice", "score": 85 },
+  { "id": 2, "name": "Bob", "score": 92 },
+  { "id": 3, "name": "Charlie", "score": 78 },
+  { "id": 4, "name": "Diana", "score": 88 },
+  { "id": 5, "name": "Ethan", "score": 95 },
+  { "id": 6, "name": "Fiona", "score": 81 },
+  { "id": 7, "name": "George", "score": 74 },
+  { "id": 8, "name": "Hannah", "score": 90 },
+  { "id": 9, "name": "Ian", "score": 83 },
+  { "id": 10, "name": "Julia", "score": 87 }
+]
