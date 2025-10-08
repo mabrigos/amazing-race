@@ -1,0 +1,14 @@
+{
+  "name": "data-maze",
+  "version": "1.0.0",
+  "description": "Clean and transform messy order data",
+  "main": "transform.js",
+  "scripts": {
+    "test": "jest",
+    "transform": "node transform.js",
+    "report": "node report.js"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

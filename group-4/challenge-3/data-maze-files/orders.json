@@ -1,0 +1,223 @@
+[
+  {
+    "order_id": "ORD-001",
+    "custName": "Alice Johnson",
+    "customer_email": "alice@email.com",
+    "order_date": "2024-01-15",
+    "total": "299.99",
+    "status": "completed",
+    "items": [
+      {"product": "Laptop", "qty": "1", "price": "299.99"}
+    ]
+  },
+  {
+    "id": "ORD-002",
+    "customer_name": "Bob Smith",
+    "email": "bob@email.com",
+    "date": "01/20/2024",
+    "total_amount": 150.50,
+    "orderStatus": "pending",
+    "items": [
+      {"product_name": "Mouse", "quantity": 2, "unit_price": "25.25"},
+      {"product_name": "Keyboard", "quantity": "1", "unit_price": "100"}
+    ]
+  },
+  {
+    "orderId": "ORD-003",
+    "client": "Charlie Brown",
+    "contact": "charlie@email.com",
+    "created_at": "2024-02-01T10:30:00Z",
+    "total": "450",
+    "status": "shipped",
+    "items": [
+      {"item": "Monitor", "qty": 1, "cost": 450}
+    ]
+  },
+  {
+    "order_id": "ORD-004",
+    "customer_name": "Diana Prince",
+    "email": "diana@email.com",
+    "timestamp": "1706889600000",
+    "total": 89.99,
+    "order_status": "completed",
+    "products": [
+      {"name": "Headphones", "amount": "1", "price": "89.99"}
+    ]
+  },
+  {
+    "id": null,
+    "custName": "Eve Torres",
+    "customer_email": "eve@email.com",
+    "order_date": "Feb 15, 2024",
+    "total": "null",
+    "status": "cancelled",
+    "items": []
+  },
+  {
+    "order_id": "ORD-006",
+    "customer": {
+      "name": "Frank Castle",
+      "email": "frank@email.com"
+    },
+    "date": "2024/02/20",
+    "total": "1200.00",
+    "status": "completed",
+    "items": [
+      {"product": "Desktop PC", "qty": "1", "price": "1200"}
+    ]
+  },
+  {
+    "orderId": "ORD-007",
+    "client_name": "Grace Hopper",
+    "client_email": "grace@email.com",
+    "order_date": "20-02-2024",
+    "total_price": 320,
+    "orderStatus": "processing",
+    "items": [
+      {"product_name": "Tablet", "quantity": "2", "unit_price": 160}
+    ]
+  },
+  {
+    "order_id": "ORD-008",
+    "custName": "Henry Ford",
+    "email": "henry@email.com",
+    "created": "2024-03-01T14:25:00",
+    "total": "599.99",
+    "status": "completed",
+    "items": [
+      {"item_name": "Printer", "qty": 1, "item_price": "599.99"}
+    ]
+  },
+  {
+    "id": "ORD-009",
+    "customer_name": "Iris West",
+    "customer_email": "iris@email.com",
+    "order_date": "March 5, 2024",
+    "total": "NULL",
+    "status": "pending",
+    "items": null
+  },
+  {
+    "orderId": "ORD-010",
+    "client": "Jack Ryan",
+    "contact_email": "jack@email.com",
+    "date": "1709740800000",
+    "amount": 175.50,
+    "order_status": "shipped",
+    "products": [
+      {"name": "Webcam", "quantity": 1, "price": 175.50}
+    ]
+  },
+  {
+    "order_id": "ORD-011",
+    "customer_name": "Karen Page",
+    "email": "karen@email.com",
+    "order_date": "2024-03-10",
+    "total": "899.00",
+    "status": "completed",
+    "items": [
+      {"product": "Laptop", "qty": "1", "price": "899"}
+    ]
+  },
+  {
+    "id": "ORD-012",
+    "custName": "Leo Valdez",
+    "customer_email": "leo@email.com",
+    "timestamp": "03/15/2024",
+    "total": "0",
+    "orderStatus": "cancelled",
+    "items": []
+  },
+  {
+    "orderId": "ORD-013",
+    "customer": {
+      "name": "Maria Hill",
+      "contact": "maria@email.com"
+    },
+    "created_at": "2024-03-20T09:15:00Z",
+    "total_amount": "2400.50",
+    "status": "completed",
+    "items": [
+      {"product_name": "Workstation", "quantity": "1", "unit_price": "2400.50"}
+    ]
+  },
+  {
+    "order_id": "ORD-014",
+    "client_name": "Nick Fury",
+    "email": "nick@email.com",
+    "date": "20240325",
+    "total": 125.75,
+    "order_status": "processing",
+    "products": [
+      {"item": "Mouse Pad", "qty": "5", "cost": "25.15"}
+    ]
+  },
+  {
+    "id": "ORD-015",
+    "customer_name": "Olivia Pope",
+    "customer_email": "olivia@email.com",
+    "order_date": "2024-03-28",
+    "total": "549.99",
+    "status": "completed",
+    "items": [
+      {"product": "Scanner", "amount": 1, "price": "549.99"}
+    ]
+  },
+  {
+    "orderId": "",
+    "custName": "Peter Parker",
+    "contact": "peter@email.com",
+    "date": "March 30, 2024",
+    "total": "invalid",
+    "orderStatus": "pending",
+    "items": [
+      {"product_name": "Cable", "quantity": null, "unit_price": "19.99"}
+    ]
+  },
+  {
+    "order_id": "ORD-017",
+    "customer_name": "Quinn Fabray",
+    "email": "quinn@email.com",
+    "created": "1711929600000",
+    "total": 799.00,
+    "status": "shipped",
+    "items": [
+      {"name": "Router", "qty": "1", "price": 799}
+    ]
+  },
+  {
+    "id": "ORD-018",
+    "client": "Rachel Green",
+    "customer_email": "rachel@email.com",
+    "order_date": "2024-04-05",
+    "total_price": "1350",
+    "orderStatus": "completed",
+    "products": [
+      {"product": "Laptop", "quantity": 1, "unit_price": "1350.00"}
+    ]
+  },
+  {
+    "orderId": "ORD-019",
+    "customer": {
+      "fullname": "Steve Rogers",
+      "email": "steve@email.com"
+    },
+    "timestamp": "04/10/2024 10:30 AM",
+    "total": "225.50",
+    "status": "completed",
+    "items": [
+      {"item_name": "Microphone", "qty": 1, "item_price": 225.50}
+    ]
+  },
+  {
+    "order_id": "ORD-020",
+    "custName": "Tony Stark",
+    "email": "tony@email.com",
+    "date": "2024-04-12T16:45:00",
+    "amount": "3500.00",
+    "order_status": "processing",
+    "items": [
+      {"product_name": "Gaming PC", "quantity": "1", "unit_price": "3500"}
+    ]
+  }
+]
