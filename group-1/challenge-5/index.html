@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnackQuest - Amazing AI Race</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px 20px;
+        }
+
+        .branding {
+            display: flex;
+            align-items: center;
+        }
+
+        .branding img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .branding span {
+            background: linear-gradient(to right, blue, purple);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .buttons button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .login-btn {
+            background-color: blue;
+            color: white;
+        }
+
+        .dark-mode-btn {
+            background-color: black;
+            color: white;
+        }
+
+        /* Sections */
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .home {
+            background: linear-gradient(to right, blue, purple);
+            color: white;
+        }
+
+        .home h1 {
+            font-size: 2.5rem;
+        }
+
+        .home button {
+            background: linear-gradient(to right, yellow, orange);
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .challenges {
+            background-color: white;
+        }
+
+        .challenges h2 {
+            background: linear-gradient(to right, darkblue, lightblue);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .challenges .card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            width: 200px;
+            text-align: left;
+        }
+
+        .leaderboard {
+            background: linear-gradient(to right, blue, purple);
+            color: white;
+        }
+
+        .leaderboard table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        .leaderboard th, .leaderboard td {
+            border: 1px solid white;
+            padding: 10px;
+        }
+
+        .about {
+            background-color: white;
+        }
+
+        footer {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Dark Mode */
+        body.dark {
+            background-color: black;
+            color: white;
+        }
+
+        body.dark header {
+            background-color: black;
+        }
+
+        body.dark nav a {
+            color: white;
+        }
+
+        body.dark .dark-mode-btn {
+            background-color: white;
+            color: black;
+        }
+
+        body.dark .home {
+            background: linear-gradient(to right, darkblue, darkpurple);
+        }
+
+        body.dark .challenges {
+            background-color: #333;
+        }
+
+        body.dark .leaderboard {
+            background: linear-gradient(to right, darkblue, darkpurple);
+        }
+
+        body.dark footer {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <img src="triangle-logo.png" alt="Logo">
+            <span>SnackQuest</span>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#challenges">Challenges</a>
+            <a href="#leaderboard">Leaderboard</a>
+            <a href="#about">About</a>
+        </nav>
+        <div class="buttons">
+            <button class="login-btn">Login</button>
+            <button class="dark-mode-btn" onclick="toggleDarkMode()">Dark Mode</button>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <h1>Welcome to the Amazing AI Race</h1>
+        <p>Can you out-prompt the machine?</p>
+        <button>Start Now</button>
+    </section>
+
+    <section id="challenges" class="challenges">
+        <h2>Challenges Preview</h2>
+        <p>Five sample missions to test your creative coding and prompting finesse.</p>
+        <div class="card">
+            <p>🎯</p>
+            <h3>Challenge 1</h3>
+            <p>Sharpen precision prompts to guide AI output with minimal tokens.</p>
+        </div>
+        <div class="card">
+            <p>🔧</p>
+            <h3>Challenge 2</h3>
+            <p>Engineer a toolchain that transforms vague tasks into structured specs.</p>
+        </div>
+        <div class="card">
+            <p>🌐</p>
+            <h3>Challenge 3</h3>
+            <p>Leverage multilingual hints to unlock hidden model capabilities.</p>
+        </div>
+        <div class="card">
+            <p>♻️</p>
+            <h3>Challenge 4</h3>
+            <p>Iteratively refine outputs via self-reflection & structured critique.</p>
+        </div>
+        <div class="card">
+            <p>📖</p>
+            <h3>Challenge 5</h3>
+            <p>Summarize complex narratives into concise, testable bullet logic.</p>
+        </div>
+    </section>
+
+    <section id="leaderboard" class="leaderboard">
+        <h2>Top teams blazing through the Amazing AI Race.</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Team Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Team Alpha</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Team Beta</td>
+                    <td>900</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About the Race</h2>
+        <p>The Amazing AI Race is a playful coding & prompting competition celebrating creativity, iteration, and clever constraint bending. Ship novel ideas, optimize instructions, and collaborate with teammates to climb the board. Snacks optional-but recommended.</p>
+    </section>
+
+    <footer>
+        <p>Built with Copilot <span>💻</span>. Powered by Snacks <span>🍫</span>.</p>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark');
+            const darkModeBtn = document.querySelector('.dark-mode-btn');
+            if (document.body.classList.contains('dark')) {
+                darkModeBtn.textContent = 'Light Mode';
+            } else {
+                darkModeBtn.textContent = 'Dark Mode';
+            }
+        }
+    </script>
+</body>
+</html>
