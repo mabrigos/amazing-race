@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SnackQuest</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 1rem 2rem;
+				background-color: #f8f9fa;
+				border-bottom: 1px solid #ddd;
+			}
+
+			header .logo {
+				display: flex;
+				align-items: center;
+			}
+
+			header .logo svg {
+				width: 40px;
+				height: 40px;
+				margin-right: 0.5rem;
+			}
+
+			header nav {
+				display: flex;
+				gap: 1rem;
+			}
+
+			header .actions {
+				display: flex;
+				gap: 1rem;
+			}
+
+			.hero {
+				text-align: center;
+				padding: 4rem 2rem;
+				background-color: #e9ecef;
+			}
+
+			.hero h1 {
+				font-size: 2.5rem;
+				margin-bottom: 1rem;
+			}
+
+			.hero p {
+				font-size: 1.2rem;
+				margin-bottom: 2rem;
+			}
+
+			.hero button {
+				padding: 0.75rem 1.5rem;
+				font-size: 1rem;
+				background-color: #007bff;
+				color: white;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			.challenges {
+				padding: 2rem;
+				text-align: center;
+			}
+
+			.challenges h2 {
+				font-size: 2rem;
+				margin-bottom: 0.5rem;
+			}
+
+			.challenges p {
+				font-size: 1rem;
+				margin-bottom: 2rem;
+			}
+
+			.challenge-cards {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1rem;
+				justify-content: center;
+			}
+
+			.challenge-card {
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				padding: 1rem;
+				width: 250px;
+				text-align: center;
+				background-color: white;
+			}
+
+			.leaderboard {
+				padding: 2rem;
+				text-align: center;
+				background-color: #f8f9fa;
+			}
+
+			.leaderboard table {
+				width: 100%;
+				max-width: 600px;
+				margin: 0 auto;
+				border-collapse: collapse;
+			}
+
+			.leaderboard th,
+			.leaderboard td {
+				border: 1px solid #ddd;
+				padding: 0.75rem;
+				text-align: left;
+			}
+
+			.about {
+				padding: 2rem;
+				text-align: center;
+			}
+
+			footer {
+				text-align: center;
+				padding: 1rem;
+				background-color: #343a40;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<circle cx="12" cy="12" r="10"></circle>
+					<line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+					<line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+					<line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+					<line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+					<line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+					<line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+				</svg>
+				<span>SnackQuest</span>
+			</div>
+			<nav>
+				<a href="#">Home</a>
+				<a href="#">Challenges</a>
+				<a href="#">Leaderboard</a>
+				<a href="#">About</a>
+			</nav>
+			<div class="actions">
+				<button>Login</button>
+				<button>🌙 Dark Mode</button>
+			</div>
+		</header>
+
+		<section class="hero">
+			<h1>Welcome to the Amazing AI Race</h1>
+			<p>Can you out-prompt the machine?</p>
+			<button>Start Now</button>
+		</section>
+
+		<section class="challenges">
+			<h2>Challenges Preview</h2>
+			<p>
+				Five sample missions to test your creative coding and prompting finesse.
+			</p>
+			<div class="challenge-cards">
+				<div class="challenge-card">
+					<span>🎯</span>
+					<h3>Challenge 1</h3>
+					<p>
+						Sharpen precision prompts to guide AI output with minimal tokens.
+					</p>
+				</div>
+				<div class="challenge-card">
+					<span>🔧</span>
+					<h3>Challenge 2</h3>
+					<p>
+						Engineer a toolchain that transforms vague tasks into structured
+						specs.
+					</p>
+				</div>
+				<div class="challenge-card">
+					<span>🌐</span>
+					<h3>Challenge 3</h3>
+					<p>
+						Leverage multilingual hints to unlock hidden model capabilities.
+					</p>
+				</div>
+				<div class="challenge-card">
+					<span>🔄️</span>
+					<h3>Challenge 4</h3>
+					<p>
+						Iteratively refine outputs via self-reflection & structured
+						critique.
+					</p>
+				</div>
+				<div class="challenge-card">
+					<span>📖</span>
+					<h3>Challenge 5</h3>
+					<p>
+						Summarize complex narratives into concise, testable bullet logic.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="leaderboard">
+			<h2>Leaderboard</h2>
+			<p>Top teams blazing through the Amazing AI Race</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Rank</th>
+						<th>Team Name</th>
+						<th>Score</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>🥇1</td>
+						<td>The Prompt Lords</td>
+						<td>98</td>
+					</tr>
+					<tr>
+						<td>🥈2</td>
+						<td>Null Terminators</td>
+						<td>87</td>
+					</tr>
+					<tr>
+						<td>🥉3</td>
+						<td>Snack Overflow</td>
+						<td>73</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section class="about">
+			<h2>About the Race</h2>
+			<p>
+				The Amazing AI Race is a playful coding & prompting competition
+				celebrating creativity, iteration, and clever constraint bending. Ship
+				novel ideas, optimize instructions, and collaborate with teammates to
+				climb the board. Snack options--but recommended.
+			</p>
+		</section>
+
+		<footer>
+			<p>Built with Copilot 💻. Powered by Snacks 🍫.</p>
+		</footer>
+	</body>
+</html>
